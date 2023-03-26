@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title> Ophthmaology </title>
+    <!-- add icon link -->
+    <link rel = "icon" href = "static/assets/img/logo/23.png"        type = "image/x-icon">
+
+	<!-- Web Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="static/assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/assets/css/style.css">
+
+	<!-- CSS Header and Footer -->
+	<link rel="stylesheet" href="static/assets/css/header.css">
+	<link rel="stylesheet" href="static/assets/css/footer.css">
+
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="static/assets/plugins/line-icons-pro/styles.css">
+	<link rel="stylesheet" href="static/assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="static/assets/plugins/font-awesome/css/font-awesome.min.css">
+
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="static/assets/css/custom.css">
+
+	</head>
+
+	<body>
+	<div class="wrapper">
+	<!--=== Header v1 ===-->
+	<div class="header-v1">
+	<!-- Topbar -->
+	<div class="topbar-v1">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6">
+	<ul class="list-inline top-v1-contacts">
+	<li>
+	<i class="fa fa-envelope"></i> Email: ophthmaologyhospital@gmail.com
+	</li>
+	<li>
+	<i class="fa fa-phone"></i> Contact no : 88666 00555
+	</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<!-- End Topbar -->
+
+	<!-- Navbar -->
+	<div class="navbar mega-menu" role="navigation">
+	<div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="res-container">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+
+	<div class="navbar-brand">
+	<a href="http://127.0.0.1:5000">
+	<img src="static/assets/img/logo/23.png" alt="Logo">
+	</a>
+	</div>
+	</div><!--/end responsive container-->
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-responsive-collapse">
+	<div class="res-container">
+	<ul class="nav navbar-nav">
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+
+
+	<!-- Home  -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000" >
+	HOME
+	</a>
+
+	</li>
+	<!-- End Home-->
+
+	<!-- Device -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000/device" >
+	Device
+	</a>
+	</li>
+	<!-- End Device -->
+	<!-- List Device -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000/dataofdevice" >
+	List of Devices
+	</a>
+	</li>
+	<!-- List Device -->
+	<!-- List Doctor -->
+	<li class="mega-menu-fullwidth">
+    <a href="http://127.0.0.1:5000/dataofdoctor" >
+    Doctors
+    </a>
+    </li>
+    <!-- List doctor -->
+	<!-- List patient -->
+	<li class="mega-menu-fullwidth">
+    <a href="http://127.0.0.1:5000/dataofdevice" >
+    Patients
+    </a>
+    </li>
+    <!-- List patient -->
+	<!-- update Device -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000/update" >
+	Update Devices 
+	</a>
+	</li>
+	<!-- update Device -->
+
+
+	</ul>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<!-- End Navbar -->
+
+
+	<!--=== Heading ===-->
+	<div class="container content">
+	<div class="row " style="margin-bottom: 30px;">
+	<div class="col-md-9 " style="margin-bottom: 30px;">
+	<div class="headline"><h2>List of Device</h2></div>
+
+	<table class="table">
+		<thead class="bg-success">
+		  <tr>
+			<th scope="col">Subject</th>
+			<th scope="col">Message</th>
+			
+
+		  </tr>
+		</thead>
+		<tbody>
+		    {%for r in myresult %}
+			<tr>
+				<th scope="row">{{r[0]}}</th>
+				<td>{{r[1]}}</td>
+				<td>{{r[2]}}</td>
+				
+			</tr>
+	        {%endfor%}  
+		</tbody>
+	  </table>
+				
+
+				<!-- side part of appointment -->
+						<div class="col-md-3" style="margin-top: 56px;">
+						
+						</div><!--/col-md-3-->
+						</div><!--/row-->
+						</div><!--/container-->
+
+</body>
+</html>

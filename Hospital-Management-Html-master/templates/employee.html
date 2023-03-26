@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title> Ophthmaology </title>
+    <!-- add icon link -->
+    <link rel = "icon" href = "static/assets/img/logo/23.png"        type = "image/x-icon">
+
+	<!-- Web Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="static/assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/assets/css/style.css">
+
+	<!-- CSS Header and Footer -->
+	<link rel="stylesheet" href="static/assets/css/header.css">
+	<link rel="stylesheet" href="static/assets/css/footer.css">
+
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="static/assets/plugins/line-icons-pro/styles.css">
+	<link rel="stylesheet" href="static/assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="static/assets/plugins/font-awesome/css/font-awesome.min.css">
+
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="static/assets/css/custom.css">
+	<!--CSS profile-->
+	<link rel="stylesheet" href="static/assets/css/Profile.css">
+
+	</head>
+
+	<body>
+	<div class="wrapper">
+	<!--=== Header v1 ===-->
+	<div class="header-v1">
+	<!-- Topbar -->
+	<div class="topbar-v1">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6">
+	<ul class="list-inline top-v1-contacts">
+	<li>
+	<i class="fa fa-envelope"></i> Email: ophthmaologyhospital@gmail.com
+	</li>
+	<li>
+	<i class="fa fa-phone"></i> Contact no : 88666 00555
+	</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<!-- End Topbar -->
+
+	<!-- Navbar -->
+	<div class="navbar mega-menu" role="navigation">
+	<div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="res-container">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+
+	<div class="navbar-brand">
+	<a href="http://127.0.0.1:5000">
+	<img src="static/assets/img/logo/23.png" alt="Logo">
+	</a>
+	</div>
+	</div><!--/end responsive container-->
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-responsive-collapse">
+	<div class="res-container">
+	<ul class="nav navbar-nav">
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+
+
+	<!-- Home  -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000" >
+	HOME
+	</a>
+
+	</li>
+	<!-- End Home-->
+
+	<!-- Device -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000/device" >
+	Device
+	</a>
+	</li>
+	<!-- End Device -->
+	<!-- List Device -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000/dataofdevice" >
+	List of Devices
+	</a>
+	</li>
+	<!-- List Device -->
+	<!-- List Doctor -->
+	<li class="mega-menu-fullwidth">
+    <a href="http://127.0.0.1:5000/dataofdoctor" >
+    Doctors
+    </a>
+    </li>
+    <!-- List doctor -->
+	<!-- List patient -->
+	<li class="mega-menu-fullwidth">
+    <a href="http://127.0.0.1:5000/dataofpatient" >
+    Patients
+    </a>
+    </li>
+    <!-- List patient -->
+	<!-- update Device -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000/update" >
+	Update Devices 
+	</a>
+	</li>
+	<!-- update Device -->
+	<!-- List patient -->
+	<li class="mega-menu-fullwidth">
+	<a href="http://127.0.0.1:5000/contact1" >
+	Messages
+	</a>
+	</li>
+	<!-- List patient -->
+
+
+	</ul>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<!-- End Navbar -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-4 mb-sm-5">
+                <div class="card card-style1 border-0">
+                    <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 px-xl-10">
+                                <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded " style="color:darkgreen">
+                                    <h3 class="h2 text-white mb-0" style="color:white"> {{checkemployee[2]}} {{checkemployee[3]}}</h3>
+                                    
+                                </div>
+                                <ul class="list-unstyled mb-1-9">
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">User Id:</span> {{checkemployee[0]}}</li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Email:</span> {{checkemployee[4]}}</li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Password:</span> {{checkemployee[1]}}</li>
+
+                                    <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600">Phone:</span>{{checkemployee[5]}}</li>
+                                </ul>
+                                <ul class="social-icon-style1 list-unstyled mb-0 ps-0">
+                                    <li><a href="#!"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#!"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#!"><i class="ti-pinterest"></i></a></li>
+                                    <li><a href="#!"><i class="ti-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mb-4 mb-sm-5">
+
+            </div>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 mb-sm-5">
+                        <div class="mb-4 mb-sm-5">
+                            <span class="section-title text-primary mb-3 mb-sm-4">Skill</span>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Leadership and management skills.</div>
+                                    <div class="col-6 text-end">80%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Communication skills, compassion and a good bedside manner.</div>
+                                    <div class="col-6 text-end">90%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:90%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Problem-solving skills</div>
+                                    <div class="col-6 text-end">50%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:50%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Decision-making skills</div>
+                                    <div class="col-6 text-end">60%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>	       
+	</div>
+
+
+
+			
+</body>
+</html>
+
